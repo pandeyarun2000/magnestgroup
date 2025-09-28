@@ -36,7 +36,7 @@ const MagnestSplitLanding = () => {
   };
 
   return (
-    <div className="min-h-screen w-full overflow-hidden relative bg-black">
+    <div className="h-screen w-full overflow-hidden relative bg-black">
       {/* Video Background - Hidden on mobile for performance */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/60 z-10" />
@@ -69,9 +69,9 @@ const MagnestSplitLanding = () => {
       </div>
 
       {/* Main Content */}
-      <div className={`relative z-30 min-h-screen ${isMobile ? 'flex flex-col' : 'flex h-full'}`}>
-        {/* Top Brand Header */}
-        <div className="absolute top-4 md:top-8 left-1/2 transform -translate-x-1/2 z-40">
+      <div className={`relative z-30 h-full ${isMobile ? 'flex flex-col' : 'flex h-full'}`}>
+        {/* Top Brand Header - Hidden on mobile */}
+        <div className="absolute top-4 md:top-8 left-1/2 transform -translate-x-1/2 z-40 hidden md:block">
           <div className="bg-white/5 backdrop-blur-md rounded-full px-4 py-2 md:px-6 md:py-3 border border-white/10">
             <h2 className="text-white font-light text-sm md:text-lg tracking-wider">
               Choose Your <span className="font-semibold">MAGNEST</span> Experience
