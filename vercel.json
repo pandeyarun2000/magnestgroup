@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "/magnestapp/:path*",
+        "destination": "https://magnest1-c.vercel.app/:path*"
+      }
+    ]
+  }
+  
